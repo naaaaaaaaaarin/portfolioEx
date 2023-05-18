@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FOLEX_About</title>
+  <!-- fontawesome -->
+  <script src="./js/fontawesome.all.min.js"></script>
+  <!-- jQuery -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="./css/common.css" />
+  <!-- js -->
+  <script defer src="./js/swiper.js"></script>
+  <script defer src="./js/common.js"></script>
+</head>
+<body class="contact">
+
+  <!-- header -->
+  <!-- header_pc -->
+  <header class="pc">
+    <div>
+      <h1><a href="#section1"><i class="far fa-keyboard"></i><span>ALi</span></a></h1>
+      <nav>
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./about.html">ABOUT</a></li>
+          <li><a href="./work.html">WORK</a></li>
+          <li><a href="./category.html">CATEGORY</a></li>
+          <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- /header_pc -->
+
+  <!-- header_tab -->
+  <header class="tab">
+    <div id="toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="overlay" id="overlay">
+      <ul>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./about.html">ABOUT</a></li>
+        <li><a href="./work.html">WORK</a></li>
+        <li><a href="./category.html">CATEGORY</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- /header_tab -->
+  <!-- /header -->
+
+  <!-- main -->
+  <section class="main">
+    <h2>CONTACT</h2>
+    <p>My name is Aeli Kim. I`am publisher & Dreamer.</p>
+  </section>
+  <!-- /main -->
+
+  <section class="contents">
+    <div class="left">
+      <h3>GET IN TOUCH</h3>
+      <form>
+        <div class="textBox">
+          <input type="text" required />
+          <label>Your Name</label>
+        </div>
+        <div class="textBox">
+          <input type="email" required="이메일 양식대로 입력하세요"
+          title="이메일 양식"  />
+          <label>Your Email</label>
+        </div>
+        <div class="textBox">
+          <textarea id="message" cols="10" rows="5" required ></textarea>
+          <label for="message">Message</label>
+        </div>
+        <input type="submit" value="submit" />
+      </form>
+    </div>
+    <div class="right">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d665.5621871148646!2d126.8789832610154!3d37.48514867340529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9e1cb7d47d89%3A0x81688cfc2e38c12d!2z7JeQ7J207Iqk7ZWY7J207JeU65Oc7YOA7JuMNeywqA!5e0!3m2!1sko!2skr!4v1664343953397!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="section fp-auto-height footer">
+    <div class="wrap2">
+      <ul>
+        <li><a href="javascript:void(0)">WORLD</a></li>
+        <li><a href="javascript:void(0)">SPORT</a></li>
+        <li><a href="javascript:void(0)">LIFESTYLE</a></li>
+        <li><a href="javascript:void(0)">FOOD</a></li>
+        <li><a href="javascript:void(0)">SCIENCE</a></li>
+        <li><a href="javascript:void(0)">TRAVEL</a></li>
+      </ul>
+      <div>
+        <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+        <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+        <a href="javascript:void(0)"><i class="fab fa-evernote"></i></a>
+      </div>
+      <p>&copy;2022 Folex. All Right Reserved.</p>
+    </div>
+  </footer>
+  <!-- /footer --> 
+
+  <!-- toTop -->
+  <div class="toTop"><i class="fal fa-long-arrow-up"></i></div>
+  <!-- /toTop -->
+
+
+  <script>
+    $('#toggle').click(function(){
+      $(this).toggleClass('active');
+      $('#overlay').toggleClass('open');
+    })
+  </script>
+</body>
+</html>

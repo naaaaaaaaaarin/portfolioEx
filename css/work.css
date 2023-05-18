@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+.work > .main {background-image:url(../images/work.jpg);}
+.work > #title {display:flex; justify-content:center; margin:3.125rem 0;}
+.work > #title > .menu {margin-left:1.875rem; font-weight:700; cursor:pointer;}
+.work > #title > .menu:first-child {margin-left:0;}
+.work > #title > .menu:hover {color:rgb(214, 181, 71);}
+.work > #title > .menu.active {color:rgb(252, 198, 23);}
+.work > .contents {display:flex; flex-wrap:wrap;}
+.work > .contents > .contentsBox {display:none; position:relative; width:25%; -webkit-animation:fade-in 1s; animation:fade-in 1s; cursor:pointer;}
+.work > .contents > .contentsBox::before {content:""; top:0; left:0; width:100%; height:100%; background:#000; transition:all 0.3s;}
+.work > .contents > .contentsBox > .text {top:50%; left:50%; transform:translate(-50%, -40%); text-align:center; color:#fff; z-index:1; transition:all 0.5s;}
+.work > .contents > .contentsBox::before, .work > .contents > .contentsBox > .text {position:absolute; opacity:0;}
+.work > .contents > .contentsBox:hover::before, .work > .contents > .contentsBox:hover > .text {opacity:1;}
+.work > .contents > .contentsBox > .text > h4 {position:relative; font-weight:700; font-size:3.75rem;}
+.work > .contents > .contentsBox > .text > h4::before {display:block; position:absolute; content:""; top:-3.75rem; left:50%; transform:translateX(-50%); width:6.25rem; height:0.25rem; background:rgb(252, 198, 23);}
+.work > .contents > .contentsBox > .text > p {margin-top:1.875rem;}
+.work > .contents > .contentsBox > .text > a {margin-top:3.125rem; padding:0.938rem 1.25rem; color:#000; border-radius:3.125rem; background:rgb(252, 198, 23);}
+
+.show {display:block !important; -webkit-animation:fade-out 1s; animation:fade-out 1s;}
+
+@media screen and (max-width: 879px) {
+  .work > .contents > .contentsBox {width:33.3%;}
+}
+
+@media screen and (max-width: 717px) {
+  .work > .contents > .contentsBox {width:50%;}
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(100%);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(100%);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-out {
+  from {
+    transform: scale(100%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  from {
+    transform: scale(100%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0);
+    opacity: 0;
+  }
+}

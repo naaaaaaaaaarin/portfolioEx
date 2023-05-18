@@ -1,0 +1,25 @@
+@charset "UTF-8";
+.contact > .main {background-image:url(../images/contact.jpg);}
+.contact > .contents {display:flex; height:37.5rem;}
+.contact > .contents > div {width:50%;}
+.contact > .contents > .left {display:flex; flex-direction:column; justify-content:center; align-items:center; margin-top:2.5rem;}
+.contact > .contents > .left > h3 {position:relative; text-align:left; font-weight:700; font-size:1.875rem;}
+.contact > .contents > .left > h3::before {display:block; content:""; position:absolute; top:-30px; left:50%; transform:translateX(-50%); width:6.25rem; height:0.25rem; background:rgb(252, 198, 23);}
+.contact > .contents > .left > form > .textBox {position:relative; margin-top:2.5rem;}
+.contact > .contents > .left > form > .textBox > input {width:25rem; padding:0.625rem; border:none; border-bottom:0.063rem solid #ccc;}
+.contact > .contents > .left > form > .textBox > label {position:absolute; top:0; left:0; color:#000; font-weight:500; transition:0.5s;}
+.contact > .contents > .left > form > .textBox > textarea {width:25rem; border:none; border-bottom:0.063rem solid #ccc;}
+.contact > .contents > .left > form > .textBox > input:focus ~ label,
+.contact > .contents > .left > form > .textBox > input:valid ~ label,
+.contact > .contents > .left > form > .textBox > textarea:focus ~ label,
+.contact > .contents > .left > form > .textBox > textarea:valid ~ label {top:-1.25rem; font-size:0.75rem;}
+.contact > .contents input[type=submit] {display:block; width:6.25rem; margin:1.25rem auto 0; padding:0.625rem 0; color:#000; border:none; border-radius:0.625rem; background:rgb(252, 198, 23); cursor:pointer;}
+.contact > .contents > .right > iframe {width:100%; height:100%;}
+
+
+
+@media screen and (max-width: 717px) {
+  .contact > .contents {flex-direction:column; height:inherit;}
+  .contact > .contents > div {width:100%;}
+  .contact > .contents > div.right {margin-top:2rem; height:500px;}
+}

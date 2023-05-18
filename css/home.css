@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/* common ////////////////////////////////////*/
+.button {padding:0.938rem 1.25rem; color:#000; border-radius:0.938rem; background:rgb(252, 198, 23);}
+.button > span {margin-right:0.625rem;}
+
+
+/* section 01 */
+.sec1 .swiper {height:100%;}
+.sec1 .swiper-slide {display:flex; align-items:center; position:relative; color:#fff;}
+.sec1 .swiper-slide > div:first-child {width:90rem; margin:0 auto;}
+.sec1 .swiper-slide > div:first-child > h2 {font-weight:700; font-size:6.25rem; line-height:6.25rem;}
+.sec1 .swiper-slide > div:first-child > p {margin:0.625rem 0 1.875rem; font-size:1.25rem; letter-spacing:0.063rem;}
+.sec1 .swiper-slide > div:last-child {position:absolute; top:0; width:100%; height:100%; z-index:-1;}
+.sec1 .swiper-button-prev {left:7.5vw;}
+.sec1 .swiper-button-next {right:7.5vw;}
+.sec1 .swiper-horizontal > .swiper-pagination-bullets {bottom:4.375rem;}
+.sec1 .swiper-pagination > .swiper-pagination-bullet {width:0.625rem; height:0.625rem; border:0.063rem solid #fff; background:transparent;}
+.sec1 .swiper-pagination > .swiper-pagination-bullet-active {background:#fff;}
+
+/* section 02, 04 */
+.sec2, .sec4 {text-align:center;}
+.sec2 > div, .sec4 > div {display:flex; flex-direction:column; justify-content:center; text-align:center;}
+.sec2 > div > h2, .sec4 > div > h2 {position:relative; font-weight:700; font-size:5.625rem;}
+.sec2 > div > h2::before, .sec4 > div h2::before {position:absolute; content:""; top:-3.75rem; left:50%; transform:translateX(-50%); width:6.25rem; height:0.25rem; background:rgb(252, 198, 23);}
+.sec2 > div > p, .sec4 > div > p {white-space:pre-line;}
+.sec2 > div > a, .sec4 > div > a {margin:2.5rem auto 0;}
+
+/* section 02 */
+.sec2 > div > p {margin-top:3.75rem;}
+
+/* section 04 */
+.sec4 > div > h2 {line-height:6.25rem;}
+.sec4 > div > p {margin-top:1.25rem;}
+
+/* sec3, 5 */
+.sec3, .sec5 {color:#fff; background-size:cover; background-repeat:no-repeat;}
+.sec3 > div, .sec5 > div {display:flex; align-items:center;}
+.sec3 > div > .wrap > h2, .sec5 > div > .wrap > h2 {position:relative; line-height:6.25rem; font-weight:700; font-size:6.25rem;}
+.sec3 > div > .wrap > h2::before, .sec5 > div > .wrap > h2::before {position:absolute; content:""; top:-1.875rem; width:6.25rem; height:0.25rem; background: rgb(252, 198, 23);}
+.sec3 > div > .wrap > p, .sec5 > div > .wrap > p {margin:0.625rem 0 1.875rem; line-height:1.4; font-size:1.25rem; white-space:pre-line; opacity:0.7; text-shadow:0.313rem 0.313rem 0.313rem rgba(0, 0, 0, 0.8);}
+.sec3 .wrap > a, .sec5 .wrap > a {text-align:center;}
+
+/* section 03 */
+.sec3 {background-image:url(../images/forest.jpg);}
+
+/* section 05 */
+.sec5 {background-image:url(../images/road.jpg);}
+
+
+
+@media screen and (max-width: 717px) {
+  .sec1 .swiper-slide > div:first-child {text-align:center;}
+  .sec1 .swiper-button-prev {display:none;}
+  .sec1 .swiper-button-next {display:none;}
+}
+
+@media screen and (max-width: 499px) {
+  .sec1 .swiper-slide > div:first-child > h2 {font-size:5rem; line-height:5rem;}
+  .sec2 > div > h2, .sec4 > div > h2 {font-size:5rem; line-height:5rem;}
+  .sec3 > div > .wrap > h2, .sec5 > div > .wrap > h2 {font-size:5rem; line-height:5rem;}
+  .sec3 > div > .wrap > h2::before, .sec5 > div > .wrap > h2::before {display:none;}
+}

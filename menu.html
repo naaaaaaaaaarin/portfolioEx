@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #toggle {position:fixed; top:5%; right:2%; width:35px; height:27px; transition:opacity .2s ease; cursor:pointer; z-index:999;}
+  #toggle > span {position:absolute; width:100%; height:5px; background:rgb(252, 198, 23); transition:all .3s ease;}
+  #toggle > span:nth-child(1) {top:0;}
+  #toggle > span:nth-child(2) {top:11px;}
+  #toggle > span:nth-child(3) {bottom:0;}
+  </style>
+</head>
+<body>
+
+    <div id="toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  <script>
+    $('#toggle').click(function(){
+      alert('aa')
+  $(this).toggleClass('active');
+  $('#ovarlay').toggleClass('open');
+})
+  </script>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #toggle {position:fixed; top:5%; right:2%; width:35px; height:27px; transition:opacity .2s ease; cursor:pointer; z-index:999;}
+  #toggle > span {position:absolute; width:100%; height:5px; background:rgb(252, 198, 23); transition:all .3s ease;}
+  #toggle > span:nth-child(1) {top:0;}
+  #toggle > span:nth-child(2) {top:11px;}
+  #toggle > span:nth-child(3) {bottom:0;}
+  header.tab > nav {position:fixed; top:0; left:0; width:100%; height:0; text-align:center; background:rgb(252, 198, 23); transition:opacity .3s, visibility .3, height .3s; opacity:0; visibility:hidden; overflow:hidden; z-index:998;}
+  header.tab > nav.open {height:100%; opacity:1; visibility:visible;}
+  header.tab > nav > ul {display:inline-block; position:relative; top:50%; height:70%; margin:0 auto; text-align:center; transform:translateY(-50%);}
+  header.tab > nav > ul > li {position:relative; font-size:50px; height:calc(100% / 5);}
+  header.tab > nav > ul > li::after {display:block; content:""; position:absolute; bottom:37px; left:0; width:0%; height:4px; background:#fff; transition: all .4s ease;}
+  header.tab > nav > ul > li:hover::after {width:100%; transition:all .4s ease;}
+  header.tab > nav > ul > li > a {font-weight:600; color:#fff;}
+  </style>
+</head>
+<body>
+  <header class="tab">
+    <div id="toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="overlay" id="overlay">
+      <ul>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./about.html">ABOUT</a></li>
+        <li><a href="./work.html">WORK</a></li>
+        <li><a href="./category.html">CATEGORY</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <script>
+    $('#toggle').click(function(){
+      alert('aa')
+  $(this).toggleClass('active');
+  $('#ovarlay').toggleClass('open');
+})
+  </script>
+</body>
+</html>
+ -->
